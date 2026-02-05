@@ -1,44 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>MungiCafe Bar | El mejor café de la ciudad</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="icon" type="image/ico" href="./assets/img/MungiCafeBar.ico">
-    <title>MungiCafe Bar main page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-    <header>
-
-        <h1>MungiCafe Bar</h1>
-
-        <nav>
-
-            <ul>
-
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-
+    <!-- Cabecera -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <!-- Logo en lugar del título de texto -->
+                <div class="logo-image">
+                    <img src="./assets/img/MungiCafeBar.ico" alt="Logo de MungiCafe Bar" class="logo-img">
+                </div>
+                <p class="slogan">Donde cada taza cuenta una historia</p>
+            </div>
+        </div>
     </header>
 
-    <main>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="./index.html" class="nav-link active"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="./index.html" class="nav-link"><i class="fas fa-info-circle"></i> Nosotros</a></li>
+                <li><a href="./index.html" class="nav-link"><i class="fas fa-coffee"></i> Menú</a></li>
+                <li><a href="./index.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Eventos</a></li>
+                <li><a href="./index.html" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <section>
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Sección de Introducción -->
+            <section class="intro-section">
+                <h2>Bienvenido a MungiCafe Bar</h2>
+                <p>En el corazón de la ciudad, MungiCafe Bar es más que un simple café. Es un refugio acogedor donde los amantes del café, los trabajadores remotos y los amigos que se reúnen encuentran su espacio ideal. Ofrecemos una selección premium de cafés de origen único, deliciosos pasteles caseros y un ambiente relajado perfecto para cualquier momento del día.</p>
+                <p>Nuestro equipo de baristas certificados prepara cada bebida con pasión y precisión, garantizando que cada visita sea una experiencia memorable. Ya sea que busques un espresso intenso para comenzar tu día o un latte cremoso para disfrutar tranquilamente, tenemos algo especial para ti.</p>
+            </section>
 
-        </section>
+            <!-- Sección de Servicios -->
+            <section class="services-section">
+                <h2>Nuestros Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-coffee service-icon"></i>
+                        <h3>Café de Especialidad</h3>
+                        <p>Granos selectos de las mejores regiones cafetaleras, tostados localmente para garantizar frescura y sabor excepcional.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-birthday-cake service-icon"></i>
+                        <h3>Repostería Casera</h3>
+                        <p>Deliciosos pasteles, galletas y postres elaborados diariamente en nuestra cocina con ingredientes naturales.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-wifi service-icon"></i>
+                        <h3>Espacio de Trabajo</h3>
+                        <p>Ambiente tranquilo con WiFi de alta velocidad, enchufes y áreas cómodas perfectas para teletrabajar o estudiar.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-music service-icon"></i>
+                        <h3>Eventos Culturales</h3>
+                        <p>Noches de jazz, lecturas de poesía y presentaciones de artistas locales cada fin de semana.</p>
+                    </div>
+                </div>
+            </section>
 
+            <!-- Sección de Imágenes -->
+            <section class="image-section">
+                <h2>Nuestro Ambiente</h2>
+                <div class="image-gallery">
+                    <div class="image-container">
+                        <img src="./assets/img/MungiCafeBar-int.png" alt="Interior acogedor de MungiCafe Bar">
+                        <p class="image-caption">Nuestro espacio interior acogedor</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="./assets/img/MungiCafeBar-ext.png" alt="Barista preparando café en MungiCafe Bar">
+                        <p class="image-caption">Nuestra acojedora terraza donde tomar algo</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer>
-
-        <img src="./assets/img/MungiCafeBar.ico" alt="MungiCafe-Bar-Icon">
-
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo en el footer (izquierda) -->
+                <div class="footer-section footer-logo">
+                    <div class="footer-logo-container">
+                        <img src="./assets/img/MungiCafeBar.ico" alt="Logo de MungiCafe Bar" class="footer-logo-img">
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>MungiCafe Bar</h3>
+                    <p>Donde cada taza cuenta una historia</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle del Aroma, 123, Centro</p>
+                    <p><i class="fas fa-phone"></i> +34 912 345 678</p>
+                    <p><i class="fas fa-envelope"></i> hola@mungicafe.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Horario</h3>
+                    <p>Lunes a Viernes: 7:00 - 22:00</p>
+                    <p>Sábados: 8:00 - 00:00</p>
+                    <p>Domingos: 9:00 - 21:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MungiCafe Bar. Todos los derechos reservados.</p>
+                <p>Diseñado con <i class="fas fa-heart"></i> para los amantes del café</p>
+            </div>
+        </div>
     </footer>
-
 </body>
 </html>
